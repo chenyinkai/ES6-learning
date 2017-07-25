@@ -77,48 +77,8 @@ __webpack_require__(1);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+//Reflect对象与Proxy对象一样，也是 ES6 为了操作对象而提供的新 API.
 
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-//每一个Symbol值都是不相等的
-// ES6 引入了一种新的原始数据类型Symbol，表示独一无二的值。它是 JavaScript 语言的第七种数据类型，前六种是：undefined、null、布尔值（Boolean）、字符串（String）、数值（Number）、对象（Object）。
-
-var s = Symbol();
-console.log(typeof s === 'undefined' ? 'undefined' : _typeof(s)); //"Symbol"
-
-//Symbol函数可以接受一个字符串作为参数，表示对Symbol实例的描述,
-var s1 = Symbol('foo');
-var s2 = Symbol('bar');
-
-s1; // Symbol(foo)
-s2; // Symbol(bar)
-
-s1.toString(); // "Symbol(foo)"
-s2.toString(); // "Symbol(bar)"
-
-
-// Symbol值不能与其他类型的值进行运算
-
-
-// Symbol值可以显示转化为字符串
-var sym = Symbol("My Symbol");
-String(sym); // 'Symbol(My symbol)'
-sym.toString(); // 'Symbol(My symbol)'
-
-//Symbol值可以转化为布尔值,但是不能转为数值;
-var sym = Symbol();
-Boolean(sym); // true
-!sym; // false
-
-if (sym) {
-  // ...
-}
-
-Number(sym); // TypeError
-sym + 2; // TypeError
-
-// 作为属性名的Symbol
 
 /***/ })
 /******/ ]);
