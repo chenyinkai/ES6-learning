@@ -17,4 +17,8 @@
 
 // import './object/object.js'  //对象的扩展
 
-import './Symbol.js'; //Symbol
+// import './Symbol.js'; //Symbol
+
+// import './Proxy.js';
+
+ import './Reflect.js';
